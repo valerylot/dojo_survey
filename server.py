@@ -6,7 +6,7 @@ app.secret_key = 'shh its a secret'
 def index():
     return render_template("index.html")
 
-@app.route('/submission', methods=['POST'])
+@app.route('/process', methods=['POST'])
 def submission():
     # stores session in request form
     session['yourname'] = request.form['yourname']
